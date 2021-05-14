@@ -4,6 +4,9 @@ package stringBuilder;
  * @author chenjie
  * @date 2021/5/14-11:12
  */
+/*
+* StringBuilder  感觉跟集合差不多呢
+* */
 public class Demo {
     /*
     * StringBuilder 是一个可变的字符序列
@@ -48,10 +51,56 @@ public class Demo {
         System.out.println("sb.capacity() = " + sb.capacity());
         System.out.println("sb.length() = " + sb.length());
 
+        /*
+        * 添加功能
+        *   append()   将数据追加到序列   返回此对象的一个引用
+        *   insert(int offset, obj)    指定位子加
+        * */
+
+        StringBuilder sb1 = new StringBuilder();
+        sb1.append(15); //返回 this 对象
+        sb1.append("cj").append("hello");
+
+        sb1.insert(2,"hehe");
+        System.out.println(sb1);
+
+//       sb.append(x)  和 sb.insert(sb.length(),x)  具有相同效果  StringBuilder 感觉跟List 差不多呢
+        sb.insert(sb.length(),"end");
 
 
+        /*
+        *  删除功能
+        *       deleteCharAt()
+        *       delete(int startIndex, int endIndex)
+        * */
 
 
+//        public StringBuilder deleteCharAt(int index)
+        sb.deleteCharAt(2);
+        System.out.println("sb = " + sb);
+
+//      public StringBuilder delete(int start, int end)
+        sb.delete(0,4);
+        System.out.println("sb = " + sb);
+
+
+        /*
+        * 替换和反转
+        *  public StringBUilder replace(int start, int end ,String str)
+        *  public StringBuilder reverse()
+        * */
+
+        System.out.println("sb1 = " + sb1);
+        sb1.replace(0,4,"*");
+        System.out.println("sb1 = " + sb1);
+
+        sb1.reverse();
+        System.out.println("sb1 = " + sb1);
+
+
+/*
+* 以上方法返回的都是 StringBuilder
+* */
 
 
 
@@ -61,5 +110,7 @@ public class Demo {
 
 
     }
+
+
 
 }

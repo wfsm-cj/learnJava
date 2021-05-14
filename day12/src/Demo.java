@@ -1,3 +1,4 @@
+import javax.lang.model.element.ElementVisitor;
 import java.util.Locale;
 
 /**
@@ -28,5 +29,6 @@ public class Demo {
         System.out.println( initial + lastLetter);
         initial = s.substring(0,1);
         System.out.println("initial = " + initial);
+
     }
 }
