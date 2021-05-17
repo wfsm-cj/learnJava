@@ -139,7 +139,7 @@ public class Demo {
                 }
                 for (chick = 0; chick < number * 3 ; chick += 3) {
                     int price = cock*5 + hen*3 + chick/3;
-                    if (price == amount) {
+                    if (price == amount && chick+hen+cock == number) {
                         count++;
                         System.out.println("chick = " + chick+"hen = " + hen+"cock = " + cock);
 
