@@ -49,11 +49,7 @@ public class Demo {
         *   有一种“值类”不需要覆盖 equals 方法，。确保“每个值至多只存在一个对象”的类。如：枚举类型
         * */
 
-        /*
-        * equals 方法实现了等价关系 （equivalence relation）
-        *       自反性(reflexive)
-        *           对于任何非 null 的引用值 x ，  x.equals(x)  必须返回 true
-        * */
+
 
     }
 
