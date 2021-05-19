@@ -1,6 +1,7 @@
 package homework;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -12,10 +13,14 @@ import java.util.regex.Pattern;
 public class Demo {
     public static void symmetry(String[] arr) {
         int count = 0;
+
         for (int i = 0; i < arr.length; i++) {
             boolean flag = true;
             char[] charArr = arr[i].toCharArray();
             int len = charArr.length;
+            /*
+             * 将判断对称提出来 ，封装成方法， 将小的功能提出来，以后用
+             * */
             for (int j = 0,k = len - 1; j < k; j++,k--) {
                 if(charArr[j] != charArr[k]) {
                     flag = false;
@@ -42,11 +47,14 @@ public class Demo {
     }
     public static void refactor() {
         String str = "张三@李四@王五@矛盾";
-        String[] arr = str.split("@");
-        String newStr = "";
-        for (int i = 0; i < arr.length; i++) {
-            newStr += arr[i].concat("  ");
-        }
+//       replace  将@ 替换成 “  ”
+//        String[] arr = str.split("@");
+//        String newStr = "";
+//        for (int i = 0; i < arr.length; i++) {
+//            newStr += arr[i].concat("  ");
+//        }
+//        System.out.println("newStr = " + newStr);
+        String newStr = str.replaceAll("@","  ");
         System.out.println("newStr = " + newStr);
     }
 
@@ -56,7 +64,12 @@ public class Demo {
 
 //        System.out.println(m.matches());
         if(m.matches()) {
-            tel = tel.substring(0,3)+"****"+tel.substring(7);
+//            tel = tel.substring(0,3)+"****"+tel.substring(7);
+//            System.out.println("tel = " + tel);
+            /*
+            * 用replace 返回  先截取你要替换的字符串 ，再 replace
+            * */
+            tel = tel.replace(tel.substring(3,7),"****");
             System.out.println("tel = " + tel);
             return;
         }
@@ -99,10 +112,21 @@ public class Demo {
         int index = 0;
         while (true){
             int i = random.nextInt(99) + 1;
-            System.out.println("i = " + i);
+            System.out.print("i = " + i);
+//            public static int binarySearch(int[] a, int key)
+//            必须在进行此调用之前对数组进行排序，通过 sort(int[]) 方法，如果没有对数组排序，则结果是不确定的
+//            如果数组包含多个带有指定值的元素，则无法保证找到的是哪一个
+            /*
+            * 二分查找 必须是升序数组
+            * */
+//            Arrays.sort(arr, Collections.reverseOrder());
+
             if( Arrays.binarySearch(arr,i) < 0) {
+                System.out.println("    "+Arrays.binarySearch(arr,i));
                 arr[index] = i;
                 index++;
+                System.out.println(Arrays.toString(arr));
+
             }
             if(index == len){
                 break;
@@ -119,6 +143,6 @@ public class Demo {
         Demo.refactor();
         String tel = "13709044036";
         verify(tel);
-        create(10);
+        create(5);
     }
 }
