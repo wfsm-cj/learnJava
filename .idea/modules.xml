@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/javaSE/javaSE.iml" filepath="$PROJECT_DIR$/javaSE/javaSE.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn/learn.iml" filepath="$PROJECT_DIR$/learn/learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learnJava.iml" filepath="$PROJECT_DIR$/.idea/learnJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/廖雪峰/廖雪峰.iml" filepath="$PROJECT_DIR$/廖雪峰/廖雪峰.iml" />
       <module fileurl="file://$PROJECT_DIR$/总结/总结.iml" filepath="$PROJECT_DIR$/总结/总结.iml" />
     </modules>
   </component>
