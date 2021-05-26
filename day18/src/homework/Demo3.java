@@ -1,8 +1,6 @@
 package homework;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 
 /**
  * @author chenjie
@@ -10,11 +8,14 @@ import java.io.InputStream;
  */
 public class Demo3 {
     public static void main(String[] args) throws IOException {
+        File ff = new File("\\.\\/heh");
         InputStream input = new FileInputStream("abc.txt");
+        System.out.println(ff.getAbsolutePath());
         byte[] arr = new byte[4];
         int len;
         while((len = input.read(arr)) != -1) {
-            //???????????????????  空 和绝对路径
+//            System.out.println(len);
+            //???????????????????  空 和绝对路径  文件里面有回车换行
             System.out.println(new String(arr,0,len)+"-----");
         }
         input.close();
