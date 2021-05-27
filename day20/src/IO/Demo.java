@@ -25,7 +25,6 @@ public class Demo {
     *  new OutputStreamWriter(new FileOutputStream("abc.txt"));
      * */
     public static void main(String[] args) throws IOException {
-        BufferedInputStream
     }
 
 }

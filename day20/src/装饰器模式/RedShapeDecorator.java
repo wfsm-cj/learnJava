@@ -16,15 +16,19 @@ public class RedShapeDecorator extends ShapeDecorator{
     }
 
     private void setRedBorder(Shape decoratedShape) {
-        System.out.println("============redBorder");
+        System.out.println("============red background");
     }
 
     public static void main(String[] args) {
         Shape circle = new Circle();
     ShapeDecorator redCircle = new RedShapeDecorator(circle);
     ShapeDecorator redRectangle = new RedShapeDecorator(new Rectangle());
+    ShapeDecorator circle1 = new RedShapeDecorator(new BorderShapeDecorator(circle));
+
         circle.draw();
         redCircle.draw();
         redRectangle.draw();
+        System.out.println("***********************");
+        circle1.draw();
     }
 }
