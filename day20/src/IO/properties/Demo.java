@@ -41,5 +41,10 @@ public class Demo {
         for (String key : set) {
             System.out.println(key+"---"+p.getProperty(key));
         }
+
+        /*
+        * properties  被 map 取代了
+        * 它的父类实现了 map 接口
+        * */
     }
 }
