@@ -1,0 +1,4 @@
+1，打开 Terminal
+2， 输入 jps 查看进程信息
+3， jstack  25560
+j stack      进程码
