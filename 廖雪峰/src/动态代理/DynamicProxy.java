@@ -41,13 +41,15 @@ public class DynamicProxy {
     InvocationHandler handler = new InvocationHandler() {
         @Override
         public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+            System.out.println(proxy);// 在外面掉会堆栈溢出， 他是个虚拟对象
+
 //            重新定义eat 方法
             if("eat".equals(method.getName())) {
                 /*Method
                 * public String getName()
                 *    以 String 形式返回 Method 对象表示的方法名称
                 * */
-                System.out.println(proxy);
+                System.out.println(proxy);// null  已经调用这个方法了，但是已经进入调用方法了， 所以不会报错，但又不知道这个对象
                 System.out.println("eating too much");
                 return null;
             }
