@@ -17,11 +17,13 @@
       <module fileurl="file://$PROJECT_DIR$/day24/day24.iml" filepath="$PROJECT_DIR$/day24/day24.iml" />
       <module fileurl="file://$PROJECT_DIR$/day25/day25.iml" filepath="$PROJECT_DIR$/day25/day25.iml" />
       <module fileurl="file://$PROJECT_DIR$/day26/day26.iml" filepath="$PROJECT_DIR$/day26/day26.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day27/day27.iml" filepath="$PROJECT_DIR$/day27/day27.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaSE/javaSE.iml" filepath="$PROJECT_DIR$/javaSE/javaSE.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn/learn.iml" filepath="$PROJECT_DIR$/learn/learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learnJava.iml" filepath="$PROJECT_DIR$/.idea/learnJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/廖雪峰/廖雪峰.iml" filepath="$PROJECT_DIR$/廖雪峰/廖雪峰.iml" />
       <module fileurl="file://$PROJECT_DIR$/总结/总结.iml" filepath="$PROJECT_DIR$/总结/总结.iml" />
+      <module fileurl="file://$PROJECT_DIR$/视频/视频.iml" filepath="$PROJECT_DIR$/视频/视频.iml" />
       <module fileurl="file://$PROJECT_DIR$/项目/项目.iml" filepath="$PROJECT_DIR$/项目/项目.iml" />
     </modules>
   </component>
